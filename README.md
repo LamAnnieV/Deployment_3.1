@@ -1,6 +1,6 @@
 # Automate Build, Test and Deploy URL Shortener Application in Stages
 
-September 15, 2023
+September 22, 2023
 
 By:  Annie V Lam - Kura Labs
 
