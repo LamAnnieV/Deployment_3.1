@@ -40,29 +40,11 @@ It worked:
 
 ## Conclusion
 
-**Jenkins**
-Jenkins is used to automate the Build, Test, and Deploy the URL Shortner Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programing lanuague that the application is written in needs to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
+We reverted back to a previous known working commit and that resolved the issue.  There are multiple ways to resove this, but fastest way is to rollback to a known working histroy.  The other option is to just troubleshoot the application.py file itself.
 
-**Instructions to Setup a New EC2 Instance**
+Moving forward, we will have a more centralized controll on what gets pushed out to productions and have managers review the work of their staff.  
 
-[Create EC2 Instance](https://github.com/LamAnnieV/Create_EC2_Instance/blob/main/Create_EC2_Instance.md)
-
-[Create IAM Roles for Elastic Beanstalk and EC2](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
-
-**Shell Scripts for Install(s) in the Instance**
-
-[Install "python3.10-venv", "python-pip", "python3-pip" and "unzip"](https://github.com/LamAnnieV/Instance_Installs/blob/main/02_other_installs.sh)
-
-**Instructions for Jenkins Install, Install Plugin(s), and Create Build**
-
-[Jenkins Install](https://github.com/LamAnnieV/Instance_Installs/blob/main/01_jenkins_installs.sh)
-
-[Install "Pipeline Utility Step" Plugin](https://github.com/LamAnnieV/Jenkins/blob/main/Install_Pipeline_Utility_Step_Plugin.md)
-
-[Create Jenkins Multibranch Pipeline Build](https://github.com/LamAnnieV/Jenkins/blob/main/Jenkins_Multibranch_Pipeline_Build.md)
-
-### Jenkins Build #1:  In Jenkins create a build "Deployment_03" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Deployment_03 and run the build.  This build consist of two stages:  Build Stage and Test Stage
-
+This incident was reported to Nike.
 
   
 
