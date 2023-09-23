@@ -32,7 +32,7 @@ We also compared the difference between Version 1 and Version 2 of the applicati
 
 As we the new hire's work was not reviewed before it was put into production, we decided that we will not keep the history of the new hire's works and did a git reset --hard:
 
-![Commmit Diff](git_reset_hard.png)
+![Commmit Diff](Images/git_reset_hard.png)
 
 It worked:
 
